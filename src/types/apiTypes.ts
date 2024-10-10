@@ -2,7 +2,7 @@ export interface apiBodiesType {
     bodies: Array<bodieType>
 }
 
-interface bodieType {
+export interface bodieType {
     id: string,
     name: string,
     englishName: string,

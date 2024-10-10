@@ -8,4 +8,6 @@
     box-shadow: 10px -20px 93px -56px rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     margin: 50px;
+
+    cursor: pointer;
 }

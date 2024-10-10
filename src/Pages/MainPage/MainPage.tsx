@@ -15,7 +15,7 @@ export const MainPage = () => {
                 <h1>Celestial Bodies</h1>
                 <div id='BodiesContainer'>
                     {data.bodies.map((bodie) => {
-                        return <BodieCard name={bodie.englishName} key={bodie.englishName} density={bodie.density} gravity={bodie.gravity} mass={bodie.mass?.massValue || 0}></BodieCard>
+                        return <BodieCard name={bodie.englishName} key={bodie.englishName} density={bodie.density} gravity={bodie.gravity} mass={bodie.mass?.massValue || 0} allData={bodie}></BodieCard>
 
                     })}
                 </div>
