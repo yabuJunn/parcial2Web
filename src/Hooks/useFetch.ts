@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import { simplyFetch } from "../services/fetch"
+import { apiBodiesType } from "../types/apiTypes"
 
 export const useFetch = (url: string) => {
-    const [data, setData] = useState({})
+    const [data, setData] = useState<apiBodiesType>()
 
     useEffect(() => {
         const wait = async () => {
