@@ -1,5 +1,4 @@
 export const simplyFetch = async (url: string) => {
-    console.log("Fetch")
     try {
         const response = await fetch(url)
         const json = await response.json()

@@ -1,5 +1,6 @@
 import './MainPage.css'
 import { useFetch } from '../../Hooks/useFetch'
+import { BodieCard } from '../../Components/MainPage/BodieCard/BodieCard'
 
 export const MainPage = () => {
     console.log("Main")
@@ -14,7 +15,7 @@ export const MainPage = () => {
                 <h1>Celestial Bodies</h1>
                 <div id='BodiesContainer'>
                     {data.bodies.map((bodie) => {
-                        return bodie.englishName
+                        return <BodieCard name={bodie.englishName} key={bodie.englishName} density={bodie.density} gravity={bodie.gravity} mass={bodie.mass?.massValue || 0}></BodieCard>
 
                     })}
                 </div>
