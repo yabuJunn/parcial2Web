@@ -2,6 +2,8 @@ import './DetailPage.css'
 
 export const DetailPage = () => {
     return <>
-        DetailPage
+        <main className='page' id='DetailPage'>
+            DetailPage
+        </main>
     </>
 }
