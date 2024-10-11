@@ -12,6 +12,9 @@ export const DetailPage = () => {
             <p>Density: {data.density}</p>
             <p>Gravity: {data.gravity}</p>
             <p>Mass: {data.mass.massValue || 0}</p>
+            <p>Is planet?: {data.isPlanet}</p>
+            <p>Inclination: {data.inclination}</p>
+            <p>Eccentricity: {data.eccentricity}</p>
         </main>
     </>
 }
